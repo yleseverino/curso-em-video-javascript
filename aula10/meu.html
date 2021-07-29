@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+
+        div#res {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="color" name="color1" id="color1"> +
+    <input type="color" name="color2" id="color2">
+    <input type="button" id="botao" value="Salvar">
+    <div class="res" >cor1</div> <div class="res" >cor2</div>
+    
+    <script>
+
+        window.addEventListener('DOMContentLoaded', () => {
+
+            document.querySelector("input#color1").value = '#033dfc'
+            document.querySelector("input#color2").value = '#be03fc'
+
+        })
+
+        document.querySelector('input#botao').addEventListener('click', () => {
+
+            const color1 = document.querySelector("input#color1")
+            const color2 = document.querySelector("input#color2")
+            const res = document.querySelectorAll("div.res")
+
+
+            res[0].style.color = color1.value
+            res[1].style.color = color2.value
+
+        })
+
+        function somar() {
+            var tn1 = window.document.getElementById("txtn1")
+            var tn2 = document.querySelector('input#txtn2')
+            var res = document.getElementById('res')
+
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+
+            var s = n1 + n2
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}` 
+        }
+    </script>
+</body>
+</html>

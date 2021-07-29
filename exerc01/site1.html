@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificado de idade</title>
+    <style>
+        body {
+            background-color: rgb(23, 23, 51);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        div#resposta {
+            align-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            width: 300px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: inherit;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header><h1>Verificador de idade</h1></header>
+    <section>
+        <div id="input">
+            Ano de Nascimento: <input type="number" name="ano" id="ano">
+            Sexo 
+            <input type="radio" name="sexo" id="mulher" value="mulher"> 
+            <label for="mulher">Mulher</label>
+            <input type="radio" name="sexo" id="homen" value="homem">
+            <label for="homen">Homem</label>
+        </div>
+        <div id="resposta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pedro_II_of_Brazil_-_Brady-Handy.jpg/640px-Pedro_II_of_Brazil_-_Brady-Handy.jpg" alt="Pedro segundo">
+        </div>
+    </section>
+    <footer>Feito por Yle</footer>
+</body>
+</html>
